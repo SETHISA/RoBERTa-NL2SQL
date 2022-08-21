@@ -344,7 +344,7 @@ def test(seq2sql_model,roberta_model,model_optimizer,roberta_tokenizer,roberta_c
     execution_acc = count_execution_acc / count
 
     accuracy = [None, select_column_acc, select_agg_acc, where_number_acc, 
-                where_column_acc, where_operator_acc,
+                where_column_acc, where_operator_acc, where_value_index_acc,
                 where_value_acc, logical_form_acc, execution_acc]
 
     return accuracy, results, count_batchlist
